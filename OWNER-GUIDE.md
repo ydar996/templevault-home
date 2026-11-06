@@ -10,6 +10,7 @@ For the primary administrator. Everything needed to maintain `https://www.temple
 | Hosting | GitHub Pages - free, auto-deploys on every push to `main` |
 | Domain | `www.templevault.net` - CNAME record at Namecheap |
 | The app | `templevault.net` - separate repo/server, untouched by this site |
+| Apex redirect | `templevault.net/` (root only) 301s to `www.templevault.net`; `/login`, `/portal`, `/api` etc. unaffected - lives in nginx `sites-available/templevault` on the droplet and `scripts/bootstrap-prod.sh` |
 | Handoff page | `https://www.templevault.net/dev-handoff-9x4k.html` (unlinked, noindex) |
 
 ## Routine Tasks
