@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>TempleVault Marketing Site - Developer Handoff</title>
+<link rel="stylesheet" href="/styles.css">
+<style>
+ol.steps{margin:0 0 18px 22px}
+code{background:#efe8d8;padding:2px 6px;border-radius:5px;font-size:14px}
+.note{background:#fff8e6;border:1px solid #e5d28a;border-radius:10px;padding:14px 18px;color:#5a4a14;font-size:14px;margin:16px 0}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<a class="logo" href="/">Temple<span>Vault</span></a>
+</div>
+</header>
+
+<section class="section">
+<div class="container" style="max-width:820px"><article>
+<span class="pill">Developer Handoff</span>
+<h2>TempleVault Marketing Site</h2>
+<p>You are being given access to the TempleVault marketing site: a static HTML/CSS site hosted on GitHub Pages at <code>https://www.templevault.net</code>. There is no build step and no framework - edit the files, push to <code>main</code>, and it publishes in under a minute.</p>
+
+<h2>Getting Access</h2>
+<ol class="steps">
+<li>Send the site owner your <strong>GitHub username</strong>. They will add you as a collaborator on the repository.</li>
+<li>Accept the invite GitHub emails you.</li>
+<li>Clone: <code>git clone https://github.com/ydar996/templevault-home.git</code></li>
+</ol>
+<div class="note">Access is owner-controlled. The site owner can add or revoke your collaborator rights at any time from the repository's Settings &gt; Collaborators. Your access is limited to this repository only - it does not include the TempleVault application, its database, or its servers.</div>
+
+<h2>Structure</h2>
+<ul>
+<li><code>index.html</code> - home</li>
+<li><code>features.html</code> - feature detail</li>
+<li><code>pricing.html</code> - pricing/plans</li>
+<li><code>about.html</code> - about</li>
+<li><code>styles.css</code> - shared styles</li>
+<li><code>sitemap.xml</code> + <code>robots.txt</code> - SEO plumbing</li>
+<li><code>CNAME</code> - custom domain mapping (do not delete)</li>
+</ul>
+
+<h2>Must Keep Working</h2>
+<ul>
+<li><strong>Sign in</strong> links: <code>https://templevault.net/login</code></li>
+<li><strong>Get Started</strong> links: <code>https://templevault.net/register</code></li>
+<li>Keep at least one visible path to each on every page (nav + footer at minimum).</li>
+</ul>
+
+<h2>SEO Requirements</h2>
+<ul>
+<li>Every page needs a unique <code>&lt;title&gt;</code>, <code>&lt;meta name="description"&gt;</code>, <code>&lt;link rel="canonical"&gt;</code>, and Open Graph tags - update them per page, don't copy-paste.</li>
+<li>One <code>&lt;h1&gt;</code> per page; semantic headings after that; alt text on all images.</li>
+<li><code>sitemap.xml</code> and <code>robots.txt</code> stay at the site root. Update the sitemap if you add or rename pages.</li>
+<li>Keep (or improve) the JSON-LD <code>SoftwareApplication</code> block in <code>index.html</code>.</li>
+<li>This handoff page carries <code>noindex</code> - keep it that way and do not link to it publicly.</li>
+</ul>
+
+<h2>Preview and Deploy</h2>
+<ol class="steps">
+<li>Preview locally: open <code>index.html</code> in a browser, or run <code>python -m http.server</code> in the repo folder.</li>
+<li>Commit and push to <code>main</code> - GitHub Pages republishes automatically within about a minute.</li>
+<li>Check the live site after each push.</li>
+</ol>
+
+<h2>Questions</h2>
+<p>Send content or scope questions back to the site owner. Do not add forms, trackers, or third-party scripts without approval.</p>
+</article></div>
+</section>
+
+<footer>
+<div class="container">
+<p><a class="logo" href="/">Temple<span>Vault</span></a></p>
+</div>
+</footer>
+</body>
+</html>
