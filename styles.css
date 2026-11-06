@@ -1,0 +1,45 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: #1e2b22;
+  background: #faf7f0;
+  line-height: 1.6;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+header { background: #12231a; border-bottom: 1px solid #23402f; }
+header .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 18px 20px; }
+.logo { font-family: Georgia, serif; font-size: 24px; color: #f4efe4; text-decoration: none; }
+.logo span { color: #c9a24b; }
+nav a { color: #cfd8cf; text-decoration: none; margin-left: 22px; font-size: 15px; }
+nav a:hover { color: #fff; }
+nav a.cta { background: #2e6b46; color: #fff; padding: 8px 16px; border-radius: 8px; }
+nav a.cta:hover { background: #3a8a5c; }
+
+.hero { background: linear-gradient(160deg, #12231a 0%, #1c3a28 100%); color: #f4efe4; text-align: center; padding: 80px 20px; }
+.hero h1 { font-family: Georgia, serif; font-size: 42px; max-width: 760px; margin: 0 auto 18px; }
+.hero p { max-width: 620px; margin: 0 auto 30px; color: #c9d4c9; font-size: 18px; }
+.btn { display: inline-block; padding: 13px 26px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 16px; }
+.btn-gold { background: #c9a24b; color: #12231a; }
+.btn-gold:hover { background: #d9b65f; }
+.btn-ghost { border: 1px solid #5a7d64; color: #d5e0d5; margin-left: 12px; }
+.btn-ghost:hover { border-color: #c9a24b; color: #fff; }
+
+.section { padding: 64px 20px; }
+.section h2 { font-family: Georgia, serif; font-size: 30px; color: #12231a; text-align: center; margin-bottom: 14px; }
+.section .lede { max-width: 680px; margin: 0 auto 42px; text-align: center; color: #4a5a4e; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
+.card { background: #fff; border: 1px solid #e5ddd0; border-radius: 12px; padding: 26px; }
+.card h3 { font-size: 18px; color: #12231a; margin-bottom: 8px; }
+.card p { color: #4a5a4e; font-size: 15px; }
+.tint { background: #f1ecdf; }
+.pill { display: inline-block; background: #e8f0e6; color: #2e6b46; border-radius: 999px; padding: 4px 14px; font-size: 13px; font-weight: 600; margin-bottom: 10px; }
+
+article h2 { font-family: Georgia, serif; color: #12231a; font-size: 26px; margin: 34px 0 10px; }
+article p { color: #37473b; margin-bottom: 14px; }
+article ul { color: #37473b; margin: 0 0 18px 22px; }
+article li { margin-bottom: 8px; }
+
+footer { background: #12231a; color: #9db0a0; padding: 34px 20px; text-align: center; font-size: 14px; }
+footer a { color: #cfd8cf; text-decoration: none; margin: 0 10px; }
+footer a:hover { color: #fff; }
