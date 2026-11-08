@@ -39,6 +39,7 @@ For the primary administrator. Everything needed to maintain `https://www.temple
 - `CNAME` file at repo root - deleting it unlinks the custom domain.
 - Sign in links: `https://templevault.net/login`
 - Get Started links: `https://templevault.net/register`
+- Pricing links: `https://templevault.net/features` - pricing lives in the app (country picker, localized rates). `pricing.html` is only a redirect there.
 - `sitemap.xml` and `robots.txt` at site root.
 - Per-page unique title/description/canonical - never copy-paste across pages.
 

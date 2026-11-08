@@ -11,10 +11,26 @@ header { background: #12231a; border-bottom: 1px solid #23402f; }
 header .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 18px 20px; }
 .logo { font-family: Georgia, serif; font-size: 24px; color: #f4efe4; text-decoration: none; }
 .logo span { color: #c9a24b; }
-nav a { color: #cfd8cf; text-decoration: none; margin-left: 22px; font-size: 15px; }
-nav a:hover { color: #fff; }
-nav a.cta { background: #2e6b46; color: #fff; padding: 8px 16px; border-radius: 8px; }
-nav a.cta:hover { background: #3a8a5c; }
+nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+nav a {
+  color: #cfd8cf;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+  padding: 7px 14px;
+  border-radius: 8px;
+  border: 1px solid #2c4a38;
+}
+nav a:hover { color: #fff; border-color: #5a7d64; background: #1a3226; }
+nav a.cta { background: #2e6b46; border-color: #2e6b46; color: #fff; }
+nav a.cta:hover { background: #3a8a5c; border-color: #3a8a5c; }
+
+@media (max-width: 640px) {
+  header .container { justify-content: center; }
+  nav { width: 100%; margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); }
+  nav a { text-align: center; padding: 9px 6px; background: #182e21; }
+  nav a.cta { background: #2e6b46; }
+}
 
 .hero { background: linear-gradient(160deg, #12231a 0%, #1c3a28 100%); color: #f4efe4; text-align: center; padding: 80px 20px; }
 .hero h1 { font-family: Georgia, serif; font-size: 42px; max-width: 760px; margin: 0 auto 18px; }

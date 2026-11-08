@@ -8,7 +8,7 @@ This is intentionally a **plain HTML/CSS static site** - no build step, no frame
 
 - `index.html` - home
 - `features.html` - feature detail
-- `pricing.html` - pricing/plans
+- `pricing.html` - redirects to `https://templevault.net/features` (country picker + localized pricing in the app)
 - `about.html` - about
 - `styles.css` - shared styles
 - `sitemap.xml` + `robots.txt` - SEO plumbing (update sitemap if pages are added/renamed)
@@ -19,6 +19,7 @@ This is intentionally a **plain HTML/CSS static site** - no build step, no frame
 Every page links back to the app:
 
 - Sign in: `https://templevault.net/login`
+- Pricing: `https://templevault.net/features` (app country picker, localized pricing)
 - Get Started / Create an Account: `https://templevault.net/register`
 
 Keep at least one obvious path to each on every page (nav + footer currently).
