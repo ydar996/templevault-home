@@ -57,5 +57,5 @@ article ul { color: #37473b; margin: 0 0 18px 22px; }
 article li { margin-bottom: 8px; }
 
 footer { background: #12231a; color: #9db0a0; padding: 34px 20px; text-align: center; font-size: 14px; }
-footer a { color: #cfd8cf; text-decoration: none; margin: 0 10px; }
+footer a { color: #cfd8cf; text-decoration: none; margin: 0 10px; white-space: nowrap; display: inline-block; }
 footer a:hover { color: #fff; }
