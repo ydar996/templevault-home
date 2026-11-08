@@ -20,6 +20,7 @@ Every page links back to the app:
 
 - Sign in: `https://templevault.net/login`
 - Pricing: `https://templevault.net/features` (app country picker, localized pricing)
+- Demo videos: `https://rumble.com/user/templevault` (footer of every page)
 - Get Started / Create an Account: `https://templevault.net/register`
 
 Keep at least one obvious path to each on every page (nav + footer currently).
